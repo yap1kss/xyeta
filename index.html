@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Академия Визуального Дизайна - Курс Дизайнера Маркетплейсов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">📐</div>
+                    <span>DesignAcademy</span>
+                </div>
+                <nav class="nav">
+                    <a href="#about">О курсе</a>
+                    <a href="#program">Программа</a>
+                    <a href="#audience">Для кого</a>
+                    <a href="#pricing">Стоимость</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <span class="badge-icon">🎨</span>
+                        <span>Академия визуального дизайна представляет</span>
+                    </div>
+                    <h1 class="hero-title">
+                        СПЕЦИАЛИСТ ПО <br>
+                        ВИЗУАЛИЗАЦИИ <br>
+                        ТОВАРОВ
+                    </h1>
+                    <div class="hero-subtitle">
+                        Изучи с основ специальность создателя
+                        визуального контента для торговых площадок и получай
+                        <span class="highlight">от 70000₽ в месяц</span> уже через месяц
+                        после завершения программы!
+                    </div>
+                    <button class="cta-button primary">
+                        ИЗУЧИТЬ ДЕТАЛИ
+                    </button>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <img src="image1.png" alt="Примеры работ дизайнера маркетплейсов" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration"></div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics" id="about">
+        <div class="container">
+            <div class="statistics-header">
+                <p class="section-subtitle">По данным исследования MarketGuru Analytics</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-title">СВЫШЕ 1.5 МЛН ТОРГОВЦЕВ НА <span class="highlight-purple">OZON</span> В 2023 ГОДУ</h3>
+                    <div class="chart-container">
+                        <svg class="growth-chart purple-chart" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Grid lines -->
+                            <defs>
+                                <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.1" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Grid -->
+                            <g stroke="#e5e7eb" stroke-width="0.5" opacity="0.5">
+                                <line x1="50" y1="20" x2="50" y2="160" />
+                                <line x1="50" y1="160" x2="380" y2="160" />
+                                <line x1="50" y1="130" x2="380" y2="130" opacity="0.3" />
+                                <line x1="50" y1="100" x2="380" y2="100" opacity="0.3" />
+                                <line x1="50" y1="70" x2="380" y2="70" opacity="0.3" />
+                                <line x1="50" y1="40" x2="380" y2="40" opacity="0.3" />
+                            </g>
+                            
+                            <!-- Y-axis labels -->
+                            <g fill="#6b7280" font-size="10" font-family="Inter">
+                                <text x="45" y="165" text-anchor="end">0</text>
+                                <text x="45" y="135" text-anchor="end">500т</text>
+                                <text x="45" y="105" text-anchor="end">1млн</text>
+                                <text x="45" y="75" text-anchor="end">1.5млн</text>
+                                <text x="45" y="45" text-anchor="end">2млн</text>
+                            </g>
+                            
+                            <!-- X-axis labels -->
+                            <g fill="#6b7280" font-size="9" font-family="Inter">
+                                <text x="70" y="175" text-anchor="middle">2012</text>
+                                <text x="110" y="175" text-anchor="middle">2014</text>
+                                <text x="150" y="175" text-anchor="middle">2016</text>
+                                <text x="190" y="175" text-anchor="middle">2018</text>
+                                <text x="230" y="175" text-anchor="middle">2020</text>
+                                <text x="270" y="175" text-anchor="middle">2021</text>
+                                <text x="310" y="175" text-anchor="middle">2022</text>
+                                <text x="350" y="175" text-anchor="middle">2023</text>
+                            </g>
+                            
+                            <!-- Growth area -->
+                            <path d="M 70,150 L 90,145 L 110,140 L 130,135 L 150,125 L 170,115 L 190,100 L 210,85 L 230,75 L 250,65 L 270,55 L 290,45 L 310,35 L 330,30 L 350,25 L 350,160 L 70,160 Z" 
+                                  fill="url(#purpleGradient)" />
+                            
+                            <!-- Growth line -->
+                            <path d="M 70,150 L 90,145 L 110,140 L 130,135 L 150,125 L 170,115 L 190,100 L 210,85 L 230,75 L 250,65 L 270,55 L 290,45 L 310,35 L 330,30 L 350,25" 
+                                  stroke="#8b5cf6" stroke-width="3" fill="none" />
+                            
+                            <!-- Data points -->
+                            <g fill="#8b5cf6">
+                                <circle cx="70" cy="150" r="3" />
+                                <circle cx="90" cy="145" r="3" />
+                                <circle cx="110" cy="140" r="3" />
+                                <circle cx="130" cy="135" r="3" />
+                                <circle cx="150" cy="125" r="3" />
+                                <circle cx="170" cy="115" r="3" />
+                                <circle cx="190" cy="100" r="3" />
+                                <circle cx="210" cy="85" r="3" />
+                                <circle cx="230" cy="75" r="3" />
+                                <circle cx="250" cy="65" r="3" />
+                                <circle cx="270" cy="55" r="3" />
+                                <circle cx="290" cy="45" r="3" />
+                                <circle cx="310" cy="35" r="3" />
+                                <circle cx="330" cy="30" r="3" />
+                                <circle cx="350" cy="25" r="4" stroke="#fff" stroke-width="2" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-title">320 ТЫСЯЧ АКТИВНЫХ ПРОДАВЦОВ НА <span class="highlight-blue">WILDBERRIES</span> В 2023 ГОДУ</h3>
+                    <div class="chart-container">
+                        <svg class="growth-chart blue-chart" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Grid lines -->
+                            <defs>
+                                <linearGradient id="blueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.1" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Grid -->
+                            <g stroke="#e5e7eb" stroke-width="0.5" opacity="0.5">
+                                <line x1="50" y1="20" x2="50" y2="160" />
+                                <line x1="50" y1="160" x2="380" y2="160" />
+                                <line x1="50" y1="130" x2="380" y2="130" opacity="0.3" />
+                                <line x1="50" y1="100" x2="380" y2="100" opacity="0.3" />
+                                <line x1="50" y1="70" x2="380" y2="70" opacity="0.3" />
+                                <line x1="50" y1="40" x2="380" y2="40" opacity="0.3" />
+                            </g>
+                            
+                            <!-- Y-axis labels -->
+                            <g fill="#6b7280" font-size="10" font-family="Inter">
+                                <text x="45" y="165" text-anchor="end">0</text>
+                                <text x="45" y="135" text-anchor="end">100т</text>
+                                <text x="45" y="105" text-anchor="end">200т</text>
+                                <text x="45" y="75" text-anchor="end">300т</text>
+                                <text x="45" y="45" text-anchor="end">400т</text>
+                            </g>
+                            
+                            <!-- X-axis labels -->
+                            <g fill="#6b7280" font-size="9" font-family="Inter">
+                                <text x="70" y="175" text-anchor="middle">2012</text>
+                                <text x="110" y="175" text-anchor="middle">2014</text>
+                                <text x="150" y="175" text-anchor="middle">2016</text>
+                                <text x="190" y="175" text-anchor="middle">2018</text>
+                                <text x="230" y="175" text-anchor="middle">2020</text>
+                                <text x="270" y="175" text-anchor="middle">2021</text>
+                                <text x="310" y="175" text-anchor="middle">2022</text>
+                                <text x="350" y="175" text-anchor="middle">2023</text>
+                            </g>
+                            
+                            <!-- Growth area -->
+                            <path d="M 70,155 L 90,152 L 110,148 L 130,145 L 150,140 L 170,135 L 190,125 L 210,115 L 230,105 L 250,95 L 270,80 L 290,65 L 310,45 L 330,35 L 350,25 L 350,160 L 70,160 Z" 
+                                  fill="url(#blueGradient)" />
+                            
+                            <!-- Growth line -->
+                            <path d="M 70,155 L 90,152 L 110,148 L 130,145 L 150,140 L 170,135 L 190,125 L 210,115 L 230,105 L 250,95 L 270,80 L 290,65 L 310,45 L 330,35 L 350,25" 
+                                  stroke="#3b82f6" stroke-width="3" fill="none" />
+                            
+                            <!-- Data points -->
+                            <g fill="#3b82f6">
+                                <circle cx="70" cy="155" r="3" />
+                                <circle cx="90" cy="152" r="3" />
+                                <circle cx="110" cy="148" r="3" />
+                                <circle cx="130" cy="145" r="3" />
+                                <circle cx="150" cy="140" r="3" />
+                                <circle cx="170" cy="135" r="3" />
+                                <circle cx="190" cy="125" r="3" />
+                                <circle cx="210" cy="115" r="3" />
+                                <circle cx="230" cy="105" r="3" />
+                                <circle cx="250" cy="95" r="3" />
+                                <circle cx="270" cy="80" r="3" />
+                                <circle cx="290" cy="65" r="3" />
+                                <circle cx="310" cy="45" r="3" />
+                                <circle cx="330" cy="35" r="3" />
+                                <circle cx="350" cy="25" r="4" stroke="#fff" stroke-width="2" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="statistics-conclusion">
+                <h2 class="conclusion-title">ВСЕМ ЭТИМ ПРЕДПРИНИМАТЕЛЯМ ТРЕБУЕТСЯ ПРОФЕССИОНАЛЬНАЯ ВИЗУАЛИЗАЦИЯ ПРОДУКЦИИ, ЧТОБЫ ИХ ТОВАРЫ УСПЕШНО РЕАЛИЗОВЫВАЛИСЬ</h2>
+                <p class="conclusion-text">Создатель визуального контента для торговых площадок - одна из наиболее перспективных специальностей в настоящее время</p>
+                <button class="cta-button secondary">ИЗУЧИТЬ УЧЕБНЫЙ ПЛАН</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="audience" id="audience">
+        <div class="container">
+            <h2 class="section-title">
+                ДАННАЯ СПЕЦИАЛЬНОСТЬ <br>
+                ИДЕАЛЬНО ПОДОЙДЕТ, ЕСЛИ ВЫ:
+            </h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Мама с ребенком работает дома" class="avatar-img" />
+                        <div class="card-badge wb-badge">WB</div>
+                        <div class="card-badge ozon-badge">OZON</div>
+                    </div>
+                    <h3 class="card-title">Мама в отпуске по уходу, креативная натура и желаете освоить умение,</h3>
+                    <p class="card-description">
+                        которое даст возможность получать <strong>стабильный заработок</strong> и трудиться 
+                        не отрываясь от домашних дел в комфортное 
+                        для вас время
+                    </p>
+                </div>
+                <div class="audience-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Начинающий художник за работой" class="avatar-img" />
+                        <div class="card-badge success-badge">✓</div>
+                    </div>
+                    <h3 class="card-title">Начинающий художник</h3>
+                    <p class="card-description">
+                        и желаете оперативно <strong>получить первый доход,</strong> заработать стартовый капитал и приобрести 
+                        уверенность в коммерческих проектах
+                    </p>
+                </div>
+                <div class="audience-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Дизайнер за работой" class="avatar-img" />
+                        <div class="card-badge success-badge">✓</div>
+                    </div>
+                    <h3 class="card-title">Дизайнер,</h3>
+                    <p class="card-description">
+                        и желаете использовать существующие компетенции в новой области и углубиться в 
+                        особенности деятельности <strong>в доходной развивающейся сфере</strong> торговых площадок
+                    </p>
+                </div>
+            </div>
+            <div class="audience-cta">
+                <button class="cta-button primary">ОЗНАКОМИТЬСЯ С ЦЕНАМИ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">В ХОДЕ ОБУЧЕНИЯ ВЫ:</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">🎯</div>
+                    <h3>Изучите создание привлекательных визуализаций для различных категорий товаров,</h3>
+                    <p>представлять продукцию так, чтобы она эффективно реализовывалась, а <strong>ваши клиенты обращались к вам</strong> многократно</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">📈</div>
+                    <h3>Узнаете, <strong>как выделяться среди конкурентов,</strong> чтобы предпочитали именно вас</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🔍</div>
+                    <h3>Поймете, <strong>как развиваться в социальных медиа</strong> <strong>и где находить клиентов</strong></h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🎨</div>
+                    <h3><strong>Освоите все аспекты и тонкости визуального дизайна,</strong></h3>
+                    <p>даже если ранее никогда не занимались этим</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section class="program" id="program">
+        <div class="container">
+            <h2 class="section-title">УЧЕБНАЯ ПРОГРАММА</h2>
+            <div class="program-modules">
+                <div class="module">
+                    <div class="module-header">
+                        <div class="module-number">БЛОК 1</div>
+                        <h3 class="module-title">ТЕОРЕТИЧЕСКИЕ ОСНОВЫ</h3>
+                    </div>
+                    <div class="module-content">
+                        <div class="lesson-list">
+                            <div class="lesson">
+                                <span class="lesson-number">01</span>
+                                <span class="lesson-title">Стартовый урок. Введение в специальность</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">02</span>
+                                <span class="lesson-title">Психология потребителей. Как получать высокий доход и что требуется для достижения лидерства</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">03</span>
+                                <span class="lesson-title">Про торговые площадки Wildberries и Ozon. Этапы разработки дизайна для маркетплейсов</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">04</span>
+                                <span class="lesson-title">Основы дизайна. Построение композиции</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">05</span>
+                                <span class="lesson-title">Теория шрифтового оформления и цветовых решений</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">06</span>
+                                <span class="lesson-title">Анализ выполненных работ</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">07</span>
+                                <span class="lesson-title">Типичные ошибки начинающих</span>
+                            </div>
+                        </div>
+                        <div class="module-visual">
+                            <div class="visual-box">
+                                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Теоретические основы дизайна" class="module-image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <div class="module-number">БЛОК 2</div>
+                        <h3 class="module-title">ПРАКТИЧЕСКИЕ НАВЫКИ</h3>
+                    </div>
+                    <div class="module-content">
+                        <div class="lesson-list">
+                            <div class="lesson">
+                                <span class="lesson-number">01</span>
+                                <span class="lesson-title">Стартовый урок. Adobe Photoshop</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">02</span>
+                                <span class="lesson-title">Работа с фоном. Цветокоррекция. Ретушь изображений</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">03</span>
+                                <span class="lesson-title">Урок создания баннера (пищевые добавки)</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">04</span>
+                                <span class="lesson-title">Урок создания 2 баннеров (fashion + размерная таблица)</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">05</span>
+                                <span class="lesson-title">Урок создания 5 баннеров (продажная воронка для электроники)</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">06</span>
+                                <span class="lesson-title">Товары для взрослых</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">07</span>
+                                <span class="lesson-title">Праздничная тематика</span>
+                            </div>
+                            <div class="lesson">
+                                <span class="lesson-number">08</span>
+                                <span class="lesson-title">Информационная карточка компании</span>
+                            </div>
+                        </div>
+                        <div class="module-visual">
+                            <div class="visual-box dark">
+                                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Практические навыки в дизайне" class="module-image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Tools Section -->
+    <section class="alternative-tools">
+        <div class="container">
+            <h2 class="section-title">А ЕСЛИ У ВАС НЕТ PHOTOSHOP?</h2>
+            <p class="section-subtitle">
+                Мы подготовили для вас дополнительный урок по работе в Figma, в 
+                котором вы ознакомитесь с интерфейсом программы и изучите 
+                функции, которые потребуются для создания карточек.
+            </p>
+            <div class="tools-section">
+                <div class="tool-card">
+                    <div class="tool-icon">🔧</div>
+                    <h3>КЛИЕНТЫ</h3>
+                    <div class="tool-content">
+                        <div class="tool-list">
+                            <div class="tool-item">
+                                <span class="item-number">01</span>
+                                <span class="item-text">Продающее портфолио</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-number">02</span>
+                                <span class="item-text">Личный бренд. Продажи и продвижение в социальных сетях</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-number">03</span>
+                                <span class="item-text">Ценообразование. Как и когда повышать стоимость</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-number">04</span>
+                                <span class="item-text">Эффективный брифинг клиента</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-number">05</span>
+                                <span class="item-text">Клиенты. Коммерческие предложения. Скрипты. Контракты</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-number">06</span>
+                                <span class="item-text">Как вести деятельность официально</span>
+                            </div>
+                        </div>
+                        <div class="tool-visual">
+                            <div class="figma-icon-container">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma Logo" class="figma-icon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Materials Section -->
+    <section class="materials">
+        <div class="container">
+            <div class="materials-header">
+                <p class="materials-subtitle">Чтобы вам было проще обучаться,</p>
+                <h2 class="materials-title">
+                    МЫ ПРЕДОСТАВИМ ВАМ ВЕСЬ <br>
+                    НЕОБХОДИМЫЙ КОНТЕНТ:
+                </h2>
+            </div>
+            <div class="materials-grid">
+                <div class="material-item">
+                    <div class="material-icon">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Справочник дизайнера" class="material-img" />
+                    </div>
+                    <h3>Справочник дизайнера</h3>
+                    <p>где находить все компоненты, шрифты, изображения и многое другое</p>
+                </div>
+                <div class="material-item">
+                    <div class="material-icon">
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Коллекция шрифтов" class="material-img" />
+                    </div>
+                    <h3>Коллекция шрифтов</h3>
+                </div>
+                <div class="material-item">
+                    <div class="material-icon">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Все полезные ресурсы для работы" class="material-img" />
+                    </div>
+                    <h3>Все полезные ресурсы для работы</h3>
+                </div>
+                <div class="material-item">
+                    <div class="material-icon">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Руководство по клиентам" class="material-img" />
+                    </div>
+                    <h3>Руководство по клиентам</h3>
+                    <p>Где находить заказчиков</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bonus Section -->
+    <section class="bonus">
+        <div class="container">
+            <div class="bonus-content">
+                <h2 class="bonus-title">И это еще не всё!</h2>
+                <h3 class="bonus-subtitle">
+                    ВЫ МОЖЕТЕ СТАТЬ НЕ ТОЛЬКО <br>
+                    ДИЗАЙНЕРОМ КАРТОЧЕК, <br>
+                    НО И РЕАЛИЗОВЫВАТЬ <strong>СОБСТВЕННУЮ ПРОДУКЦИЮ!</strong>
+                </h3>
+                <div class="bonus-grid">
+                    <div class="bonus-info">
+                        <p class="bonus-description">Вы получаете Дополнительные уроки от специалиста по запуску на Wildberries</p>
+                        <div class="bonus-features">
+                            <div class="bonus-feature">
+                                <span class="feature-icon">01</span>
+                                <span>Перспективные категории товаров с авторским дизайном на WB</span>
+                            </div>
+                            <div class="bonus-feature">
+                                <span class="feature-icon">02</span>
+                                <span>Правовые вопросы деятельности</span>
+                            </div>
+                            <div class="bonus-feature">
+                                <span class="feature-icon">03</span>
+                                <span>Создание личного кабинета продавца</span>
+                            </div>
+                            <div class="bonus-feature">
+                                <span class="feature-icon">04</span>
+                                <span>Категории и типы товаров, с которыми иллюстратор может выйти на маркетплейсы</span>
+                            </div>
+                        </div>
+                        <div class="bonus-extra">
+                            <p>+ Чек-лист "10 ключевых правил при запуске на Wildberries"</p>
+                        </div>
+                    </div>
+                    <div class="bonus-visual">
+                        <div class="wb-logo-container">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Интернет магазин и продажи" class="wb-image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bonus-cta">
+                    <h3>Начните работать и зарабатывать уже в процессе обучения!</h3>
+                    <p>Ведь <strong>для участников VIP тарифа мы организовали конкурс с тремя призовыми местами</strong> от реальных заказчиков!</p>
+                    <button class="cta-button primary">НАЧАТЬ ОБУЧЕНИЕ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors">
+        <div class="container">
+            <h2 class="section-title">ПРЕПОДАВАТЕЛИ КУРСА:</h2>
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <img src="woman1.jpg" alt="Анна Морозова" class="instructor-photo" />
+                    <h3 class="instructor-name">АННА МОРОЗОВА</h3>
+                    <div class="instructor-info">
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Визуальный дизайнер с 2017 года</span>
+                        </div>
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Создатель школы визуального и веб дизайна с 2018 г.</span>
+                        </div>
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Обучила визуальному дизайну свыше 1200 человек</span>
+                        </div>
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Сотрудничает с поставщиками торговых площадок в России и за рубежом</span>
+                        </div>
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Выполнила свыше 12000 коммерческих проектов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <img src="woman2.png" alt="Мария Петрова" class="instructor-photo" />
+                    <h3 class="instructor-name">МАРИЯ ПЕТРОВА</h3>
+                    <div class="instructor-info">
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Специалист и наставник по работе и заработку на Торговых площадках.</span>
+                        </div>
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Проводит персональное сопровождение и наставничество по развитию своего бизнеса на WB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <img src="woman3.png" alt="Елена Васильева" class="instructor-photo" />
+                    <h3 class="instructor-name">ЕЛЕНА ВАСИЛЬЕВА</h3>
+                    <div class="instructor-info">
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Преподаватель, соучредитель DesignAcademy</span>
+                        </div>
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Иллюстратор, визуальный дизайнер</span>
+                        </div>
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Обучила свыше 15000 человек</span>
+                        </div>
+                        <div class="instructor-point">
+                            <span class="point-icon">✓</span>
+                            <span>Автор 60+ обучающих программ и интенсивов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">
+                    ОСТАЛИСЬ ВОПРОСЫ ИЛИ НУЖНА <br>
+                    ПОМОЩЬ С ОФОРМЛЕНИЕМ <br>
+                    РАССРОЧКИ - ПИШИТЕ
+                </h2>
+                <button class="contact-button">НАПИСАТЬ В WHATSAPP</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-icon">📐</div>
+                        <span>DesignAcademy</span>
+                    </div>
+                    <div class="footer-details">
+                        <p>ИНН: 74598741237453</p>
+                        <p>ОГРН: 319280100038739</p>
+                        <p>ИП Иванов А.С.</p>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <p>info@designacademy.online</p>
+                    <p>+7(924)3428580</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">договор оферты</a>
+                    <a href="#">политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
